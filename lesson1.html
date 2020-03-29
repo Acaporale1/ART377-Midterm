@@ -1,4 +1,5 @@
-<html><head>
+<html>
+	<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>The Code Current | LESSONS</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&amp;display=swap" rel="stylesheet">
@@ -11,26 +12,24 @@
 </head>
 <body>
 
-
-	<nav>
+<nav>
 			<ul class="menu">
-				<li class="logo"><a href="index.html" class="logo" target="_self"><img alt="LOGO" href="index.html" src="images/logo-header.png"></a></li>
+				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>
 	
 				<li class="item primary secondary"><a title="HOME" href="index.html" target="_self">home</a></li>
 				<li class="item"><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
 				<li class="item"><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
 				<li class="item"><a href="faq.html" title="FAQ" target="_self">faq</a></li>
 				<li class="item"><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
-				<li class="toggle"><span class="bars"></span></li>
+				<li class="toggle" style="border-left: none"><a href="#"><i class="fas fa-bars"></i></a></li>
 			</ul>
 	</nav>
-
 	
 <div class="container">	
 
 <h1>.LESSON-<span class="txtCYAN">1</span> {</h1>
 
-<div class="lessonContainer" style="border: 3px solid blue;margin-top: 20px;margin-bottom: 50px;">
+<div class="lessonContainer" style="margin-top: 20px;margin-bottom: 50px;">
 	<div class="lessonContent">
 		<h2>understanding-the-structure:</h2>
 		<br>
@@ -68,18 +67,20 @@
 </div>
 	
 	
-<div class="lessonContainer" style="border: 3px solid blue;margin-top: 20px;margin-bottom: 50px;">	
-	<div class="lessonContent" style="">
-		<img width="100%" height="auto" alt="HTML-Breakdown" src="images/lesson1/lesson1-elements.png">
+<div class="lessonContainer" style="margin-top: 20px;margin-bottom: 50px;">	
+	<div class="lessonContent">
+			<center>
+				<img height="auto" alt="HTML-Breakdown" src="images/lesson1/lesson1-elements.png">
+			</center>
 		<br><br>
 	
 		<h2>getting-started:</h2>
 		<br>
 		<p style="text-align: center">It's important to understand the basic structure of an HTML page before we dive into the design...</p>
 			<p>
-				
-					<img width="100%" height="auto" alt="HTML-Structure" src="images/lesson1/lesson1-structure.png">
-				
+				<center>
+					<img height="auto" alt="HTML-Structure" src="images/lesson1/lesson1-structure.png">
+				</center>
 		
 				</p><ul>
 					<li>An HTML page is structured like a human body! </li>
@@ -149,23 +150,25 @@
 	<br><br>
 	
 	
-<div style="
-    width: 80%;
-"><iframe src="lesson1-game.html"></iframe></div>
-
+	
+<iframe src="lesson1-game.html"></iframe>	
 	
 	<br><br>
 	<div class="lessonContent">
 		<h1 style="float: left">}</h1>
 		<button class="button" style="float:right;height:50px" onclick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
 	</div>
-</div><!--end lesson-container-->		
+	
+
+</div><!--end lesson-container-->
+		
+	
 <a class="toTop" href="#top"><i class="fas fa-angle-double-up" aria-hidden="true"></i></a>
-	
-	
-</div> <!--end container-->
 
 <footer><span style="font-size: 30px;">®</span>CODE CURRENT - All rights reserved</footer>		
+</div> <!--end container-->
+
+	
 <script>
 		
 	$(function() {
@@ -176,6 +179,7 @@
 			   }
 			else{
 				$(".item").addClass("active");
+				
 			}
 			
 		})

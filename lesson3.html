@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<!-- Alana Caporale
+ART377 - MIDTERM SITE-->
+<html>
+<head>
+<title>The Code Current | Lesson 3</title>	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	
+<link rel="stylesheet" type="text/css" href="styles/styles.css">
+<link rel="stylesheet" href="styles/colors.css">
+	
+<script src="https://kit.fontawesome.com/9ae88992e0.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	
+	<nav>
+			<ul class="menu">
+				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>
+	
+				<li class="item primary secondary"><a title="HOME" href="index.html" target="_self">home</a></li>
+				<li class="item"><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
+				<li class="item"><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
+				<li class="item"><a href="faq.html" title="FAQ" target="_self">faq</a></li>
+				<li class="item"><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
+				<li class="toggle" style="border-left: none"><a href="#"><i class="fas fa-bars"></i></a></li>
+			</ul>
+	</nav>
+
+	
+		
+		<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
+	<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>		
+
+	
+<script>
+		
+	$(function() {
+		$(".toggle").on("click",function(){
+			
+			if($(".item").hasClass("active")){
+			   	$(".item").removeClass("active");
+			   }
+			else{
+				$(".item").addClass("active");
+			}
+			
+		})
+			
+	
+	});	
+	
+	</script>
+</body>
+
+</html>

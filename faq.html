@@ -17,30 +17,144 @@ ART377 - MIDTERM SITE-->
 	
 <script src="https://kit.fontawesome.com/9ae88992e0.js" crossorigin="anonymous"></script>
 
+<style>
+
+.accordion {
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+font-family: 'Source Code Pro', monospace;
+	text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+color: #1C1C1C;
+ background: rgb(20, 246, 0);
+ box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.panel {
+  padding: 0px 60px;
+  color: #121212;
+	text-transform: uppercase;
+  background-color: #E6E6E6;
+  max-height: 0;
+width: 100%;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 16px;
+  color: inherit;
+  float: left;
+  margin-right: 15px;
+}
+
+.active:after {
+  	content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.panel li a{
+  color: #121212;
+border-bottom: 2px solid #121212;
+	
+}
+.panel li a:hover{
+color: #121212;
+border-bottom: 2px solid rgb(20, 246, 0);
+}
+.panel ul{
+		line-height: 36px;
+	list-style: none;
+	}
+</style>
 </head>
 <body>
 	
 	<nav>
 			<ul class="menu">
-				<li class="logo"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/logo-header.png"></a></li>
+				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>
 	
 				<li class="item primary secondary"><a title="HOME" href="index.html" target="_self">home</a></li>
 				<li class="item"><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
 				<li class="item"><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
 				<li class="item"><a href="faq.html" title="FAQ" target="_self">faq</a></li>
 				<li class="item"><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
-				<li class="toggle"><span class="bars"></span></li>
+				<li class="toggle" style="border-left: none"><a href="#"><i class="fas fa-bars"></i></a></li>
 			</ul>
 	</nav>
 
+<div class="container">
+		<center>
+			
+		<h1>Have <span class="txtRED">questions?</span></h1>
+		
+		<h3>(We have <span class="txtLIME">Answers</span>!)</h3>
+		</center>
 	
 		
-		<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
-	<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>		
+		<button class="accordion">I want to start coding my own website, do i need a special program for that?</button>
+			<div class="panel">
+			  <p>It is recommended to use a modern text editior (not notepad or a microsoft word document). Getting started is super easy, and there are so many platforms you can use.<br><br>
+				  
+				Here are a few text-editors you can use to create HTML files:<br><br>
+				  Click to be redirected to each reference...
+				<ul>
+				<li><a href="https://atom.io/" target="_blank">atom</a></li>
+				<li><a href="http://brackets.io/" target="_blank">brackets</a></li>
+				<li><a href="https://www.sublimetext.com/" target="_blank">sublime text</a></li>
+				<li><a href="https://code.visualstudio.com/" target="_blank">visual studio code</a></li>
+					<br>
+				</ul>
+				
+			</p>
+			</div>
 
+			<button class="accordion">I Want more practice, are there other sites like this one?</button>
+			<div class="panel">
+			  <p>Yes! There are an infinite amount of resources to learn from.<br>
+				 Click to be redirected to each reference...
+				<ul>
+				<li><a href="https://www.freecodecamp.org/learn/" target="_blank">Freecodecamp.org</a></li>
+				<li><a href="https://www.codecademy.com/" target="_blank">codeacademy.com</a></li>
+				<li><a href="dash.generalassemb.ly" target="_blank">dash.generalassemb.ly</a></li>
+				<li><a href="https://htmldog.com/" target="_blank">htmldog.com</a></li>
+				<li><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a></li>
+				</ul>
+			</p>
+			</div>
+
+			<button class="accordion">I want to build my own site to teach HTML, but I am getting an error when trying to type ' &#123; ' ... How can i do this?? </button>
+			<div class="panel">
+			  <p>Since this is an HTML entity, you need to insert special HTML code to tell the browser: 'this is an open brace'. <br>
+				  <center>
+				<ul>
+				<li><a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Complete list of character codes</a></li>
+				</ul>
+				  </center>
+			</p>
+			</div>
+
+		<br>
+	<div class="centered">
 	
-<script>
-		
+	</div>	
+	
+	<footer>
+		<span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved
+	</footer>		
+</div>
+	
+<script>	
 	$(function() {
 		$(".toggle").on("click",function(){
 			
@@ -55,8 +169,23 @@ ART377 - MIDTERM SITE-->
 			
 	
 	});	
-	
-	</script>
+</script>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
 </body>
 
 </html>
