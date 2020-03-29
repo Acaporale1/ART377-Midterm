@@ -33,12 +33,14 @@ body {
 	margin:0;
 	overflow-x: hidden;
 }
+/*
 header{
 	width: 100%;
 	height: 45px;
 	padding-top: 5px;
 	background-color: #121212;
 }
+*/
 footer{
 	
 	width: 100%;
@@ -60,16 +62,17 @@ a{
 	text-decoration: none;
 	color: #E6E6E6;
 }
+/*
 
-nav{
+header{
 	background-color: #121212;
 	padding: 5px 30px;
 }
-nav ul{
+header ul{
 	list-style-type: none;
 	text-transform: uppercase;
 }
-nav a:hover{
+header a:hover{
 	color: #14F600;
  	text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
 	text-decoration: none;
@@ -87,7 +90,9 @@ nav a:hover{
 .primary.secondary{
 	border-bottom: 1px #444 solid;
 }
+*/
 /*Mobile Menu*/
+/*
 .menu{
 	display: flex;
 	flex-wrap: wrap;
@@ -114,6 +119,7 @@ nav a:hover{
 .toggle{
 	cursor: pointer;
 }
+*/
 /*
 .bars{
 	background: #999;
@@ -141,6 +147,7 @@ nav a:hover{
 
 
 /*Tablet Menu*/
+/*
 @media all and (min-width:600px){
 	.menu{
 		justify-content: center;
@@ -169,8 +176,10 @@ nav a:hover{
 		
 	}
 }
+*/
 
 /*Desktop*/
+/*
 @media all and (min-width:850px){
 	.menu li{
 		font-size: 18px;
@@ -196,8 +205,143 @@ nav a:hover{
 		padding-right: 0;
 	}
 }
+*/
 
+.header {
+  background-color: #121212;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
 
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	text-transform: uppercase;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+	color: #14F600;
+	text-shadow: 0 5px 15px rgba(20, 246, 0, .8);
+	text-decoration: none;
+ 	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #E6E6E6;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #E6E6E6;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.header.menu-icon:hover{
+	background-color: #D800FF;
+}
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 50em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: left;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
 
 form{
 	position: relative;
@@ -220,8 +364,7 @@ form #submit{
 	font-size: 18px;
 	color: #d6d6d6;
  	background: rgba(20, 246, 0,.7);
-/* 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
-*/ 	padding: 15px 40px;
+ 	padding: 15px 40px;
  	text-transform: uppercase;
  	transition: all 0.2s ease-in-out;
 }
@@ -404,8 +547,6 @@ iframe{
 
 .cta{
 	position: relative;
-	/*margin-left: 500px;
-	margin-right: 200px;*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 210px;
@@ -494,8 +635,7 @@ iframe{
 	font-size: 18px;
 	color: #d6d6d6;
  	background: rgba(20, 246, 0,.7);
-/* 	box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
-*/ 	padding: 15px 40px;
+ 	padding: 15px 40px;
  	font-weight: normal;
  	text-transform: uppercase;
  	transition: all 0.2s ease-in-out;

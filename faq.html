@@ -34,7 +34,7 @@ font-family: 'Source Code Pro', monospace;
   transition: 0.4s;
 }
 
-.active, .accordion:hover {
+.activeAcord, .accordion:hover {
 color: #1C1C1C;
  background: rgb(20, 246, 0);
  box-shadow: 0 5px 15px rgba(20, 246, 0, .8);
@@ -60,7 +60,7 @@ width: 100%;
   margin-right: 15px;
 }
 
-.active:after {
+.activeAcord:after {
   	content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 .panel li a{
@@ -79,11 +79,15 @@ border-bottom: 2px solid rgb(20, 246, 0);
 </style>
 </head>
 <body>
-	
-	<nav>
+
+<!--
+	<header>
+		<a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a>
 			<ul class="menu">
-				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>
+-->
+<!--				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>-->
 	
+<!--
 				<li class="item primary secondary"><a title="HOME" href="index.html" target="_self">home</a></li>
 				<li class="item"><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
 				<li class="item"><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
@@ -91,8 +95,22 @@ border-bottom: 2px solid rgb(20, 246, 0);
 				<li class="item"><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
 				<li class="toggle" style="border-left: none"><a href="#"><i class="fas fa-bars"></i></a></li>
 			</ul>
-	</nav>
+	</header>
+-->
 
+	<header class="header">
+		<a href="index.html" class="logo" target="_self"><img width = "120px" alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  	<ul class="menu">
+   		<li><a title="HOME" href="index.html" target="_self">home</a></li>
+		<li><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
+		<li><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
+		<li><a href="faq.html" title="FAQ" target="_self">faq</a></li>
+		<li><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
+  	</ul>
+</header>
+<br><br>
 <div class="container">
 		<center>
 			
@@ -153,30 +171,14 @@ border-bottom: 2px solid rgb(20, 246, 0);
 		<span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved
 	</footer>		
 </div>
-	
-<script>	
-	$(function() {
-		$(".toggle").on("click",function(){
-			
-			if($(".item").hasClass("active")){
-			   	$(".item").removeClass("active");
-			   }
-			else{
-				$(".item").addClass("active");
-			}
-			
-		})
-			
-	
-	});	
-</script>
+
 <script>
 var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("activeAcord");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
