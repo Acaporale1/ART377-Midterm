@@ -10,7 +10,7 @@ ART377 - MIDTERM SITE-->
 	
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+<script src="js/overall.js"></script>
 
 	
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
@@ -33,6 +33,7 @@ ART377 - MIDTERM SITE-->
 font-family: 'Source Code Pro', monospace;
 	text-transform: uppercase;
   transition: 0.4s;
+	
 }
 
 .activeAcord, .accordion:hover {
@@ -47,11 +48,13 @@ transition: all 0.2s ease-in-out;
   padding: 0px 60px;
   color: #121212;
 	text-transform: uppercase;
-  background-color: #E6E6E6;
+  background-color: rgba(231,231,231,.875);
+
   max-height: 0;
-width: 100%;
+	width: 100%;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+	
 }
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
@@ -80,24 +83,6 @@ border-bottom: 2px solid rgb(20, 246, 0);
 </style>
 </head>
 <body>
-
-<!--
-	<header>
-		<a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a>
-			<ul class="menu">
--->
-<!--				<li class="logo" style="border-left: none"><a href="index.html" class="logo" target="_self"><img alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a></li>-->
-	
-<!--
-				<li class="item primary secondary"><a title="HOME" href="index.html" target="_self">home</a></li>
-				<li class="item"><a href="lessons.html" title="LESSONS" target="_self">lessons</a></li>
-				<li class="item"><a href="challenges.html" title="CHALLENGES" target="_self">challenges</a></li>
-				<li class="item"><a href="faq.html" title="FAQ" target="_self">faq</a></li>
-				<li class="item"><a href="contact.html" title="CONTACT" target="_self">contact</a></li>
-				<li class="toggle" style="border-left: none"><a href="#"><i class="fas fa-bars"></i></a></li>
-			</ul>
-	</header>
--->
 
 	<header class="header">
 		<a href="index.html" class="logo" target="_self"><img width = "120px" alt = "LOGO"  href="index.html" src="images/code-current-full.png"></a>
@@ -164,10 +149,7 @@ border-bottom: 2px solid rgb(20, 246, 0);
 			</div>
 
 		<br>
-	<div class="centered">
-	
-	</div>	
-	
+	<a id ="toTop" class="toTop"><i class="fas fa-angle-double-up"></i></a>
 	<footer>
 		<span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved
 	</footer>		

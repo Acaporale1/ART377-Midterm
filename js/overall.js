@@ -1,3 +1,22 @@
 // JavaScript Document
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+window.addEventListener('load',(event)=>{
+	var toTop=document.getElementById('toTop');
+	window.onscroll= function(e){
+		console.log("scroll");
+		if(window.pageYOffset> 340){
+		toTop.style.visibility="visible";	
+		}
+		else{
+			toTop.style.visibility="hidden";
+		}
+	}
+	
+		toTop.addEventListener('click',(event)=>{
+			window.scroll(0,0);
+		});
+			
+	
+});
+	
+	

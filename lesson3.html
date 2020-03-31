@@ -3,18 +3,14 @@
 ART377 - MIDTERM SITE-->
 <html>
 <head>
-<title>The Code Current | Lesson 3</title>	
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="images/favicon.png"/>
-	
+	<link rel="icon" href="images/favicon.png"/>
+	<title>The Code Current | LESSONS</title>
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-	
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link rel="stylesheet" href="styles/colors.css">
-	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/overall.js"></script>
 <script src="https://kit.fontawesome.com/9ae88992e0.js" crossorigin="anonymous"></script>
 
 </head>
@@ -33,38 +29,64 @@ ART377 - MIDTERM SITE-->
   	</ul>
 </header>
 <br><br>
-<div class="container">
 	
-	<h1>.LESSON-<span class="txtCYAN">3</span> {</h1>
-	<div class="lessonContainer">
-	xxx
+<div class="container">	
+	
+
+<h1>.LESSON-<span class="txtCYAN">3</span> &#123;</h1>
+
+<div class="lessonContainer">
+	
+	<div class="lessonContent" style="justify-content: flex-start ">
+		<h2 style="display: inline">lets-get-listy:</h2>
+			
+			<p style="display: inline;text-align: center">Let's start organizing our thoughts...</p>
+		<br><br>
+		<ul>
+			<li>Every day we use '<span class="txtORANGE">LISTS</span>'.</li>
+			<ul>
+				<li>We might make a list for when it's time to buy groceries, or maybe to write down to-do tasks!</li>
+			</ul>
+			<li>There are <span class="txtCYAN">2</span> types of <span class="txtORANGE">LISTS</span>.</li>
+				<ol>
+					<li>An '<span class="txtCYAN">ORDERED LIST</span>' is when each list element is preceded with a number (1,2,3,etc,.)</li> 
+					<li>An '<span class="txtCYAN"><span class="txtYELLOW">UN-</span>ORDERED LIST</span>' is when each list element is preceded with a non-numeric glyph, such as a bullet point or an arrow.</li> 
+				</ol>
+		</ul>
+		<br>
+		<center>
+			<img width="65%" height="auto" alt="HTML-HeadingTag" src="images/lesson2/code-current-lesson2-headline.png">
+		</center>
 	</div>
 </div>
 	
+	<br>
 	
+<div class="lessonContainer">	
+	<div class="lessonContent">
+		<h2>headlines:</h2>
 		
-		<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
-	<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>		
+	</div><!--END LESSON CONTENT-->
+	
+	<br>
+	<br>
+<iframe style="width: 900px;height: 600px" src="lesson3-game.html"></iframe>	
+	
+	<br><br>
+	
+<div class="lessonContent">
+		<h1 style="float: left">}</h1>
+		<button class="button" style="float:right;height:50px" onclick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
+</div>	
+</div><!--end lesson-container-->
+
+		
+<a id ="toTop" style="visibility: hidden" class="toTop"><i class="fas fa-angle-double-up"></i></a>
 
 	
-<script>
-		
-	$(function() {
-		$(".toggle").on("click",function(){
-			
-			if($(".item").hasClass("active")){
-			   	$(".item").removeClass("active");
-			   }
-			else{
-				$(".item").addClass("active");
-			}
-			
-		})
-			
 	
-	});	
-	
-	</script>
+</div> <!--end container-->
+<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>	
 </body>
 
 </html>
