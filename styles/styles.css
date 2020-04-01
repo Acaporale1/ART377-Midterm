@@ -70,7 +70,7 @@ a{
   margin: 0;
   padding: 0;
   list-style: none;
-	text-transform: uppercase;
+text-transform: uppercase;
   overflow: hidden;
   background-color: #121212;
 }
@@ -104,7 +104,7 @@ a{
 .header .menu {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
+  transition: .2s ease-out;
 }
 
 /* menu icon */

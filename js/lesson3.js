@@ -29,7 +29,7 @@ let questions = [
         choiceC : "ALL OF THE ABOVE",
         correct : "A"
     },{
-        question : "How many &lt;li&gt; elements are present?",
+        question : "CHALLENGE:How many &lt;li&gt; elements are present?",
         imgSrc : "images/lesson3/lesson3-Q3.png",
         choiceA : "1",
         choiceB : "2",
