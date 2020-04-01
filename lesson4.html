@@ -3,7 +3,7 @@
 ART377 - MIDTERM SITE-->
 <html>
 <head>
-<title>The Code Current | Lesson 4</title>	
+<title>The Code Current | LESSON 4</title>	
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/favicon.png"/>	
 <script src="js/overall.js"></script>	
@@ -34,23 +34,160 @@ ART377 - MIDTERM SITE-->
 </header>
 <br><br>
 	
-	<div class="container">
+<div class="container">	
 	
-	<h1>.LESSON-<span class="txtCYAN">4</span> {</h1>
-	<div class="lessonContainer">
-	xxx
+
+<h1>.LESSON-<span class="txtCYAN">4</span> &#123;</h1>
+
+<div class="lessonContainer">
+	
+	<div class="lessonContent" style="justify-content: flex-start ">
+		<h2 style="display: inline">get-creative:</h2>
+			
+			<p style="display: inline;text-align: center">Let's start styling!...</p>
+		<br><br>
+		<ul>
+			<li>It's time to put some personality into our webpages using '<span class="txtORANGE">CSS</span>'.</li>
+			<ul>
+				<li>'<span class="txtORANGE">CSS</span>' stands for <span class="txtHPINK">CASCADING STYLE SHEETS</span>. </li>
+				<li><span class="txtORANGE">CSS STYLES</span> allow us to associate special rules for different HTML elements which effect how your overall page will look.</li>
+				<ul>
+					<li>Ex: All &lt;h1&gt; tags will be red, &lt;h2&gt; tags will be blue, &lt;p&gt; tags will be green...</li>
+				</ul>
+			</ul>
+			<br>
+			<li>There are <span class="txtCYAN">2</span> ways to introduce <span class="txtORANGE">CSS styling</span> in an HTML page.</li>
+				<ol>
+					<li>The '<span class="txtCYAN">&lt;style&gt;</span>' tag is one place where we can introduce special styling rules.</li>
+					<ul>
+						<li>Since we need these styles to appear right as the page loads, we introduce this tag in the <span class="txtYELLOW">&lt;head&gt;</span> portion of our code.</li>
+					</ul>
+					<li>A '<span class="txtCYAN">CSS style sheet</span>' a file separate from your HTML code.</li>
+					<ul>
+						<li>By separating our styles from our HTML, we maintain a clean, easy to read structure. This is very helpful when it comes to debugging.</li>
+						<li>If we create this separate file, we need to use the <span class="txtYELLOW">&lt;link&gt;</span> tag to let our browser know where to find our new rules!</li> 
+							<ul>
+								<li>(We will go over this later...)</li>
+							</ul>
+							
+					</ul>
+				</ol>
+		</ul>
+		<br>
+		<center>
+			<img style="border-right: 1px solid" width="65%" height="auto" alt="HTML-HeadingTag" src="images/lesson4/lesson4-01.png">
+			<img width="65%" height="auto" alt="HTML-HeadingTag" src="images/lesson4/lesson4-02.png">
+		</center>
 	</div>
-
-	
-	
-
-<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
 </div>
-		
-		<a class="toTop" href="#top"><i class="fas fa-angle-double-up"></i></a>
-	<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>		
+	
+	<br>
+	
+<div class="lessonContainer">	
+	<div class="lessonContent">
+		<h2>where-do-we-start:</h2>
+		<ul>
+			<li>You may have noticed some weird code in the image below named '<span class="txtORANGE">EXTERNAL CSS FILE</span>'. This was a real application of how we would create these "special rules."</li>
+			<br>
+			
+				<li>Let's break down this structure.. </li>
+				<ul>
+				<li>In order to make our HTML appear unique, we need to associate each element with the  various styles you want to use. for different HTML elements which effect how your overall page will look.</li>
+				<ul>
+					<li>A <span class="txtCYAN">CSS rule</span> is made up of <span class="txtCYAN">2</span> parts:</li>
+					<ol>
+						<li>The '<span class="txtORANGE">selector</span>' is the indicator for which element we are styling.</li>
+							<ul>
+								<li>&lt;h1&gt;,&lt;h2&gt;,&lt;p&gt;, etc.</li>
+							</ul>
+						<li>The '<span class="txtORANGE">declaration</span>' refers to the statements of how we want the <span class="txtORANGE">selector</span> to be styled.</li>
+							<ul>
+								<li>font-size : 18px, font-color: blue, background-color: white, etc.</li>
+							</ul>
+					</ol>
+					<li>The '<span class="txtORANGE">declaration</span>' of a style also has <span class="txtCYAN">2</span> parts!</li>
+						<ol>
+						<li>The '<span class="txtHPINK">property</span>' of a declaration indicates what attribute of the style we are changing.</li>
+							<ul>
+								<li>font-size, color, background-color, width, height etc.</li>
+							</ul>
+						<li>The '<span class="txtHPINK">value</span>' specifies the setting of the desired property.</li>
+							<ul>
+								<li>font size (18px), color (red), width (200px) etc.</li>
+							</ul>
+					</ol>
+				</ul>
+			</ul>
+			<br>
+			<br>
+		<center>
+			<img style="" width="65%" height="auto" alt="HTML-HeadingTag" src="images/lesson4/lesson4-03-03.png">
+		</center>
+		</ul>
+	</div><!--END LESSON CONTENT-->
+	
+	<br>
+	<br>
+<div class="lessonContainer">
+	
+	<div class="lessonContent" style="justify-content: flex-start ">
+		<h2 style="display: inline">link-up:</h2>
+			
+			<p style="display: inline;text-align: center">How to link an external CSS file</p>
+		<br><br>
+		<ul>
+			<li>As mentioned earlier, when linking external files, we have to reference them in the <span class="txtYELLOW">&lt;link&gt;</span> tag.</li>
+			<ul>
+				<li>We need to include <span class="txtCYAN">4</span> attributes in this tag:</li>
+				<ol>
+					<li><span class="txtYELLOW">&lt;link&gt;</span></li>
+					<ul>
+						<li>This tells our browser: "Okay you need to look for something..."</li>
+					</ul>
+					<li><span class="txtCYAN">href="<i>##filepath##</i>"</span></li>
+					<ul>
+						<li>This tells our browser: "Okay in order to make my site look awesome, look 'here'."</li>
+					</ul>
+						<ul>
+						<li>Typically the file path would look like this: <span class="txtORANGE">'styles/styles.css'</span>.</li>
+							<ul>
+								<li>styles = the folder storing the external file<br>styles.css = the actual file we are looking for.</li>
+							</ul>
+						</ul>
+							
+					<li><span class="txtLIME">type="text/css"</span></li>
+					<ul>
+						<li>This tells our browser: "The type of file I am feeding you is a CSS file."</li>
+					</ul>
+					<li><span class="txtHPINK">rel="stylesheet"</span></li>
+					<ul>
+						<li>This is the relationship between the HTML page and the file we are linking it to.</li>
+					</ul>
+				</ol>
+			</ul>		
+		</ul>
+		<br><br>
+		<center>
+			<img width="65%" height="auto" alt="HTML-HeadingTag" src="images/lesson4/lesson4-04.png">
+		</center>
+	</div>
+</div>
+	<br><br>
 
 	
+<div class="lessonContent">
+		<h1 style="float: left">}</h1>
+		<button class="button" style="float:right;height:50px" onclick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
+</div>	
+</div><!--end lesson-container-->
+
+		
+<a id ="toTop" style="visibility: hidden" class="toTop"><i class="fas fa-angle-double-up"></i></a>
+
+	
+	
+</div> <!--end container-->
+<footer><span style="font-size: 30px;">&reg;</span>CODE CURRENT - All rights reserved</footer>	
 </body>
 
 </html>
