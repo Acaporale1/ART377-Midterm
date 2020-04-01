@@ -37,112 +37,110 @@ ART377 - MIDTERM SITE-->
 <div class="container">	
 	
 
-<h1>.LESSON-<span class="txtCYAN">5</span> &#123;</h1>
-
-<div class="lessonContainer">
+	<h1>.LESSON-<span class="txtCYAN">5</span> &#123;</h1>
 	
-	<div class="lessonContent" style="justify-content: flex-start ">
-		<h2 style="display: inline">link-up-everyone:</h2>
+		<div class="lessonContainer">
 			
-			<p style="display: inline;text-align: center">How do you navigate from page to page?</p>
-		<br><br>
-		<ul>
-			<li>Whether you are shopping online or scrolling through social media, you most definitely have interacted with links.</li>
-			<ul>
-				<li>When jumping from page to page, HTML uses the '<span class="txtORANGE">&lt;a&gt;</span>' tag.</li>
+			<div class="lessonContent" style="justify-content: flex-start ">
+				<h2 style="display: inline">link-up-everyone:</h2>
+					
+					<p style="display: inline;text-align: center">How do you navigate from page to page?</p>
+				<br><br>
 				<ul>
-				<li>This is called an '<span class="txtORANGE">anchor</span>' tag.</li>
-				</ul>
-				
-			</ul>
-			<br>
-			<li>Anything placed between the open <span class="txtORANGE">&lt;a&gt;</span> and closed <span class="txtORANGE">&lt;/a&gt;</span> is clickable by the user. </li>
-			<br>
-			<li>In order to specify where we want the user to be redirected, we use the '<span class="txtCYAN">href="##URL##"</span>' attribute.</li>
-				<ul>
-				<li>The cool thing about anchor tags is that, opposed to the '<span class="txtORANGE">&lt;link&gt;</span>' tag we learned about last lesson, your '<span class="txtCYAN">href="##URL##"</span>' here can contain a website URL (https:www.google.com), another page within the current site the user is on, or an email address! (index.html, contact.html, etc.) </li>
-				</ul>
-		</ul>
-		<br>
-		<br><hr>
-		<center>
-			<h1 class="container" style="text-transform: none"><span class="txtCYAN">&lt;a href="https://google.com"&gt;</span>CLICK HERE<span class="txtCYAN">&lt;/a&gt;</span></h1>
-			<a href="https://google.com" target="_blank" title="GOOGLE.COM"><h1><span class="txtYELLOW"><u>CLICK HERE</u></span></h1></a>
-		</center>
-		<hr>
-	</div>
-</div>
-	
-	<br>
-	
-<div class="lessonContainer">	
-	<div class="lessonContent" style="justify-content: flex-start ">
-		<h2 style="display: inline">theres-more-to-links-that-meets-the-eye:</h2>
-			
-			<p style="display: inline;text-align: center">Links have more going on behind the scenes...</p>
-		<br><br>
-		<ul>
-			<li>The hard part is out of the way. Now that we have our tag redirecting the user to another source, we need to add a few more things.</li>
-			<br>
-			<li>One thing to keep in mind when designing a website is the <span class="txtORANGE">USER EXPERIENCE</span>.</li>
-			<ul>
-				<li>This means: 'Is it easy for a user to understand the objective of your website? Is it readable? Is it easy to navigate?</li>
-			</ul>
-			<br>
-			<li>When embedding links in your webpage, think about these questions:</li>
-				<ol>
-					<li>When a user clicks this link, should they stay in the current browser window?</li>
-					<li>When a user clicks this link, should a new browser window open?</li>
-				</ol>
-			<br>
-			<li>To alter this experience, it is important to include the '<span class="txtCYAN">target="_"</span>' attribute.</li>
-			<ul>
-				<li>There most common targets are:</li>
-				<ol>
-					<li><span class="txtCYAN">target="_self"</span></li>
-						<ul>
-						<li>By using this target, the link will redirect to another page in the <span class="txtYELLOW">SAME window</span>.</li>
-						
-						</ul>
-					<li><span class="txtCYAN">target="_blank"</span></li>
+					<li>Whether you are shopping online or scrolling through social media, you most definitely have interacted with links.</li>
 					<ul>
-						<li>By using this target, the link will redirect to another page in a <span class="txtYELLOW">NEW window</span>.</li>
-						<li>If you take this approach, you may hope that the user will go back to the original window they were browsing on after they are finished with the embedded link. </li>
+						<li>When jumping from page to page, HTML uses the '<span class="txtORANGE">&lt;a&gt;</span>' tag.</li>
+						<ul>
+						<li>This is called an '<span class="txtORANGE">anchor</span>' tag.</li>
 						</ul>
-				</ol>
-			</ul>
-			<br>
-			<li>One last habit you should get into is adding the ' <span class="txtCYAN">title=" "</span> ' attribute.</li>
-			<ul>
-				<li>The title attribute acts as a <span class="txtYELLOW">TOOLTIP</span>. In simpler terms, when you hover over a link, the text you include within the title attritube will appear in a small box to the right of your mouse cursor.</li>
-				<li>You may not have noticed, but when you hover over the <span class="txtYELLOW"><u>CLICK HERE</u></span> listed above, you see the text: 'GOOGLE.COM'.</li>
-				<ul>
-				<li>The syntax for this link is as follows:<br><span class="txtCYAN">&lt;a href="https://www.google.com" target="_blank" title="GOOGLE.COM"&gt;CLICK HERE&lt;/a&gt;</span></li>
+						
+					</ul>
+					<br>
+					<li>Anything placed between the open <span class="txtORANGE">&lt;a&gt;</span> and closed <span class="txtORANGE">&lt;/a&gt;</span> is clickable by the user. </li>
+					<br>
+					<li>In order to specify where we want the user to be redirected, we use the '<span class="txtCYAN">href="##URL##"</span>' attribute.</li>
+						<ul>
+						<li>The cool thing about anchor tags is that, opposed to the '<span class="txtORANGE">&lt;link&gt;</span>' tag we learned about last lesson, your '<span class="txtCYAN">href="##URL##"</span>' here can contain a website URL (https:www.google.com), another page within the current site the user is on, or an email address! (index.html, contact.html, etc.) </li>
+						</ul>
 				</ul>
+				<br>
+				<br><hr>
+				<center>
+					<h1 class="container" style="text-transform: none"><span class="txtCYAN">&lt;a href="https://google.com"&gt;</span>CLICK HERE<span class="txtCYAN">&lt;/a&gt;</span></h1>
+					<a href="https://google.com" target="_blank" title="GOOGLE.COM"><h1><span class="txtYELLOW"><u>CLICK HERE</u></span></h1></a>
+				</center>
+				<hr>
+			</div>
+		</div>
+			
+			<br>
+			
+		<div class="lessonContainer">	
+			<div class="lessonContent" style="justify-content: flex-start ">
+				<h2 style="display: inline">theres-more-to-links-that-meets-the-eye:</h2>
+					
+					<p style="display: inline;text-align: center">Links have more going on behind the scenes...</p>
+				<br><br>
+				<ul>
+					<li>The hard part is out of the way. Now that we have our tag redirecting the user to another source, we need to add a few more things.</li>
+					<br>
+					<li>One thing to keep in mind when designing a website is the <span class="txtORANGE">USER EXPERIENCE</span>.</li>
+					<ul>
+						<li>This means: 'Is it easy for a user to understand the objective of your website? Is it readable? Is it easy to navigate?</li>
+					</ul>
+					<br>
+					<li>When embedding links in your webpage, think about these questions:</li>
+						<ol>
+							<li>When a user clicks this link, should they stay in the current browser window?</li>
+							<li>When a user clicks this link, should a new browser window open?</li>
+						</ol>
+					<br>
+					<li>To alter this experience, it is important to include the '<span class="txtCYAN">target="_"</span>' attribute.</li>
+					<ul>
+						<li>There most common targets are:</li>
+						<ol>
+							<li><span class="txtCYAN">target="_self"</span></li>
+								<ul>
+								<li>By using this target, the link will redirect to another page in the <span class="txtYELLOW">SAME window</span>.</li>
+								
+								</ul>
+							<li><span class="txtCYAN">target="_blank"</span></li>
+							<ul>
+								<li>By using this target, the link will redirect to another page in a <span class="txtYELLOW">NEW window</span>.</li>
+								<li>If you take this approach, you may hope that the user will go back to the original window they were browsing on after they are finished with the embedded link. </li>
+								</ul>
+						</ol>
+					</ul>
+					<br>
+					<li>One last habit you should get into is adding the ' <span class="txtCYAN">title=" "</span> ' attribute.</li>
+					<ul>
+						<li>The title attribute acts as a <span class="txtYELLOW">TOOLTIP</span>. In simpler terms, when you hover over a link, the text you include within the title attritube will appear in a small box to the right of your mouse cursor.</li>
+						<li>You may not have noticed, but when you hover over the <span class="txtYELLOW"><u>CLICK HERE</u></span> listed above, you see the text: 'GOOGLE.COM'.</li>
+						<ul>
+						<li>The syntax for this link is as follows:<br><span class="txtCYAN">&lt;a href="https://www.google.com" target="_blank" title="GOOGLE.COM"&gt;CLICK HERE&lt;/a&gt;</span></li>
+						</ul>
+						
+					</ul>
+				</ul>
+					
+				<br>
+				<br>
+				<center>
+					
+				</center>
 				
-			</ul>
-		</ul>
+			</div>
 			
-		<br>
-		<br>
-		<center>
+		<br><br>
+		
+	<div class="lessonContent">
+			<h1 style="float: left">}</h1>
+			<button class="button" style="float:right;height:50px" onclick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
+	</div>	
+	</div><!--end lesson-container-->
+	
 			
-		</center>
-		
-	</div>
-</div>
-	
-	
-	<br><br>
-	
-<div class="lessonContent">
-		<h1 style="float: left">}</h1>
-		<button class="button" style="float:right;height:50px" onclick="location.href='lessons.html'">BACK TO ALL LESSONS</button>
-</div>	
-</div><!--end lesson-container-->
-
-		
-<a id ="toTop" style="visibility: hidden" class="toTop"><i class="fas fa-angle-double-up"></i></a>
+	<a id ="toTop" style="visibility: hidden" class="toTop"><i class="fas fa-angle-double-up"></i></a>
 
 	
 	
